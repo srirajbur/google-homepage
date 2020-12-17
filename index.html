@@ -29,8 +29,7 @@
         .nav-right{
             display: flex;
             justify-content: flex-end;
-            /* margin-right: 20px;
-            margin-top: 20px */
+
         }
 
         nav a{
@@ -50,20 +49,34 @@
 
         .signin-button{
             color: white;
-            text-decoration: none;
             cursor: default;
-            background-color: #4285f4;
-            box-shadow: 0 1px 0 rgba(0,0,0,.15);
+            background-color: #005eff;
+            border: 1px solid #4285f4;
+            font-weight: bold;
+            display: inline-block;
+            /* line-height: 28px; */
+            padding: 0px 12px;
+            border-radius: 2px;
+
             margin-left: 15px;
+        }
+
+        .signin-button:hover{
+            text-decoration: none;
+            box-shadow: 0 1px 0 rgba(37, 37, 37, 0.15);
         }
 
 
         .menu-icon{
-            width: 18px;
-            height: 18px;
-            margin-left: 15px;
+            width: 16px;
+            height: 16px;
             opacity: 0.75;
+            position: relative;
+            top: 4px;
+        }
 
+        .menu-img:hover{
+            opacity: 1;
         }
 
 
@@ -82,16 +95,30 @@
         }
 
         footer{
-            height: 105px;
-            color: #202124;
+            height: 5vh;
             border-top: 1px solid #dadce0;
             background: #f2f2f2;
             display: flex;
-            justify-content: space-between
+            justify-content: space-between;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
         }
 
-        footer a:visited{
-            color: rgba(0,0,0,.54);
+        footer a {
+            color: #70757a;
+            padding-left: 27px;
+            font-size: 14px;
+            line-height: 40px;
+        } 
+        
+        .footer-right{
+            padding-right:27px;
+        }
+        
+        footer a:hover{
+            text-decoration:underline;
         }
     </style>
 </head>
@@ -104,8 +131,8 @@
         <div class="nav-right">
             <a href="#">Gmail</a>
             <a href="#">Images</a>
-            <img class="menu-icon" src="https://icon-library.com/images/google-apps-icon-png/google-apps-icon-png-24.jpg" alt="9 dot menu bar">
-            <a href="#" class="signin-button">Sing in</a>
+            <a href="#"><img class="menu-icon" src="https://icon-library.com/images/google-apps-icon-png/google-apps-icon-png-24.jpg" alt="9 dot menu bar"></a>
+            <a href="#" class="signin-button">Sign in</a>
         </div>
     </nav>
 
@@ -122,7 +149,7 @@
         <div class="footer-left">
             <a href="#">Advertising</a>
             <a href="#">Business</a>
-            <a href="#">How Search Wordk</a>
+            <a href="#">How Search Works</a>
         </div>
 
         <div class="footer-right">
