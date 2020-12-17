@@ -85,7 +85,7 @@
             height: 85vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            /* justify-content: center; */
             align-items: center;
         }
         /* ----Search Bar----- */
@@ -121,13 +121,33 @@
             margin: 0 auto;
         }
 
+        .twobuttons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .twobuttons .one{
+            margin-right: 20px;
+        }
+
+        .twobuttons .two{
+            margin-left: 20px;
+        }
+
         .submit{
-            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
             background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
-            background-color: #f8f8f8;
-            border: 1px solid #c6c6c6;
-            color: #222;
+            background-color: #f2f2f2;
+            font-family: arial,sans-serif;
+            color: #5F6368;
             padding: 10px;
+            border-radius: 4px;
+        }
+
+        .submit:hover{
+            border: 1px solid #f2f2f2;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
         }
 
 
@@ -135,13 +155,15 @@
             width: 24px;
             height: 24px;
             margin-right: 5px;
+            cursor: pointer;
+        }
+
+        .logo{
+            margin-top: 150px;
+            margin-bottom: 20px;
         }
 
 
-        /* main img{
-            max-width: 500px;
-            height: 201px;
-        } */
 
     /* --------------Footer--------------------- */
         footer{
@@ -187,17 +209,17 @@
     </nav>
 
     <main>
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Image">
+        <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Image">
         <form>
             <div class="search">
                 <svg class="search-img img" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
                 <input class="search-bar" type="text">
                 <img class="microphone img" src="/imgs/microphone.png" alt="">
             </div>
-        <div class="twobuttons">
-            <button type="submit" class="submit">Google Search</button>
-            <button type="submit" class="submit">I'm Feeling Lucky</button>
-        </div>
+            <div class="twobuttons">
+                <button type="submit" class="submit one">Google Search</button>
+                <button type="submit" class="submit two">I'm Feeling Lucky</button>
+            </div>
         </form>
     </main>
     
