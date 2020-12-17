@@ -148,6 +148,7 @@ input[type="text"], .submit{
     height: 24px;
     margin-right: 5px;
     cursor: pointer;
+    background-color:white;
 }
 
 .logo{
